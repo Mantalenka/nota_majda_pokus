@@ -1,0 +1,37 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"udB8Gx26yG2DJEuZcsD7GUN0D1y0jjw0": {
+			"height": 72,
+			"title": "nota_majdaT_ctp2.goToHills",
+			"width": 263,
+			"x": 256,
+			"y": 0
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [],
+		"id": "udB8Gx26yG2DJEuZcsD7GUN0D1y0jjw0",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "units",
+			"value": "units"
+		}, {
+			"name": "scriptName",
+			"value": "nota_majdaT_ctp2.goToHills"
+		} ],
+		"scriptName": "nota_majdaT_ctp2.goToHills"
+	}
+}

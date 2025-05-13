@@ -1,0 +1,242 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"6Js79OVVhph1UWUNsQZLWTffzxq0lmK8": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 632,
+			"y": -187
+		},
+		"9wal4KyN6z9MXU7ojyHBhes0YJAK8xFx": {
+			"height": 94,
+			"title": "store",
+			"width": 299,
+			"x": 1614,
+			"y": 154
+		},
+		"BFDjTO0mR2Uf57LhVYtWsdaJbP3WQ8Jy": {
+			"height": 110,
+			"title": "reference",
+			"width": 268,
+			"x": 1069,
+			"y": 260
+		},
+		"KoXVWU4hkAIMyLxAa4bP99uaEvJVpgQZ": {
+			"height": 94,
+			"title": "store",
+			"width": 252,
+			"x": 1479,
+			"y": 69
+		},
+		"RixKdgUFpvGZF2lIH2S9Ha9osaVODk1n": {
+			"height": 94,
+			"title": "store",
+			"width": 247,
+			"x": 1431,
+			"y": -13
+		},
+		"SqW23A85RN4Sw65wTSLGe78GXWnRGVSc": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 597,
+			"y": 32
+		},
+		"VMzVVxQdNSRG70C1jEiXLpqybguJU97A": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 259,
+			"x": 1113,
+			"y": 130
+		},
+		"VhTHW9IWwjM5UULsLFWsC9rwczcQs6Tf": {
+			"height": 70,
+			"title": "roleSplit",
+			"width": 202,
+			"x": 276,
+			"y": -94
+		},
+		"g2XvnEuoAmy4xvJApwz5rIv3MvZ43mbH": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 757,
+			"y": 338
+		},
+		"jTt7vqyON5vWgGXQNqs0ViKv5tgvL0Qr": {
+			"height": 110,
+			"title": "reference",
+			"width": 325,
+			"x": 1431,
+			"y": -115
+		},
+		"maD460XpnjmgVLuUxtmRygVbi3WgHvZl": {
+			"height": 110,
+			"title": "reference",
+			"width": 325,
+			"x": 1630,
+			"y": 261
+		},
+		"q8nLORj2K6uDOl16ngrVkdBJsDA5n8CB": {
+			"height": 110,
+			"title": "reference",
+			"width": 312,
+			"x": 1021,
+			"y": -92
+		},
+		"yhW7Fsgk3Eqh6bt4bBjP1Dy7qgEyCC5K": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1034,
+			"y": 38
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_majdaT_ctp2.Bear" ],
+		"name": "Bear"
+	}, {
+		"categories": [ "nota_majdaT_ctp2.peewee_warrior" ],
+		"name": "Everyone_is_not_Bear"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "6Js79OVVhph1UWUNsQZLWTffzxq0lmK8",
+			"nodeType": "wait",
+			"parameters": [ {
+				"name": "time",
+				"value": 1000
+			} ]
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "q8nLORj2K6uDOl16ngrVkdBJsDA5n8CB",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_majdaT_ctp2.go_to_safety_line"
+				} ],
+				"referenceInputs": [],
+				"referenceOutputs": []
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "jTt7vqyON5vWgGXQNqs0ViKv5tgvL0Qr",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_majdaT_ctp2.kill_enemy_four_hill"
+					} ],
+					"referenceInputs": [],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "RixKdgUFpvGZF2lIH2S9Ha9osaVODk1n",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "count_enemy"
+					}, {
+						"name": "value",
+						"value": "#Spring.GetTeamUnits(1)"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "KoXVWU4hkAIMyLxAa4bP99uaEvJVpgQZ",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "enemy"
+					}, {
+						"name": "value",
+						"value": "{Spring.GetTeamUnits(1)}"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				} ],
+				"id": "yhW7Fsgk3Eqh6bt4bBjP1Dy7qgEyCC5K",
+				"nodeType": "sequence",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "9wal4KyN6z9MXU7ojyHBhes0YJAK8xFx",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "FUCK"
+					}, {
+						"name": "value",
+						"value": "(#(Spring.GetTeamUnits(1)) == 0)"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "maD460XpnjmgVLuUxtmRygVbi3WgHvZl",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_majdaT_ctp2.kill_enemy_four_hill"
+					} ],
+					"referenceInputs": [],
+					"referenceOutputs": []
+				} ],
+				"id": "VMzVVxQdNSRG70C1jEiXLpqybguJU97A",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "(#(Spring.GetTeamUnits(1)) == 0)"
+				}, {
+					"name": "repeat",
+					"value": "true"
+				} ]
+			}, {
+				"children": [],
+				"id": "BFDjTO0mR2Uf57LhVYtWsdaJbP3WQ8Jy",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_majdaT_ctp2.go_to_hills"
+				} ],
+				"referenceInputs": [],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "g2XvnEuoAmy4xvJApwz5rIv3MvZ43mbH",
+				"nodeType": "wait",
+				"parameters": [ {
+					"name": "time",
+					"value": 1000
+				} ]
+			} ],
+			"id": "SqW23A85RN4Sw65wTSLGe78GXWnRGVSc",
+			"nodeType": "sequence",
+			"parameters": []
+		} ],
+		"id": "VhTHW9IWwjM5UULsLFWsC9rwczcQs6Tf",
+		"nodeType": "roleSplit",
+		"parameters": [ {
+			"name": "mode",
+			"value": "all-success"
+		} ]
+	}
+}

@@ -1,0 +1,124 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"FIC8aXTUB8Coo1dYghlYKqTZPJOrPOTp": {
+			"height": 94,
+			"title": "store",
+			"width": 499,
+			"x": 1167,
+			"y": -154
+		},
+		"RoHNRTAcCffkWRji4W31ojASf1GgKphg": {
+			"height": 60,
+			"title": "sequence_FollowBranch",
+			"width": 237,
+			"x": 868,
+			"y": 12
+		},
+		"iifWmu01S8A9BzRDmhLP63yy4yNgXP8O": {
+			"height": 95,
+			"title": "store",
+			"width": 718,
+			"x": 1286,
+			"y": 146
+		},
+		"nenk4ewiE4iQTW9krmvLwib07zSpF5LW": {
+			"height": 92,
+			"title": "store",
+			"width": 179,
+			"x": 1189,
+			"y": -58
+		},
+		"xx5hWm3aIoY84cQNRIYlKIjxWHogYLgy": {
+			"height": 132,
+			"title": "nota_majdaT_ctp2.moveCustomGroupAllArrived",
+			"width": 388,
+			"x": 1261,
+			"y": 289
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_majda_turinska_sandsail2_du_lastV.Maverick_orig", "nota_majda_turinska_sandsail2_du_lastV.follow_role", "Common.airUnits", "Common.bomberAirUnits", "Common.builders", "Common.buildings", "Common.fighterAirUnits", "Common.groundUnits", "Common.immobile", "Common.mobileBuilders", "Common.transports", "nota_majda_turinska_sandsail2_du.Maverick_orig", "nota_majda_turinska_sandsail2_du.follow_role", "nota_majda_turinska_sandsail2_du.maverick_role", "nota_raiders.bots", "nota_raiders.vehicles" ],
+		"name": "Default"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "FIC8aXTUB8Coo1dYghlYKqTZPJOrPOTp",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "unitData"
+			}, {
+				"name": "value",
+				"value": "nota_majdaT_ctp2.Safety_Formation(units)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "nenk4ewiE4iQTW9krmvLwib07zSpF5LW",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "groupFormation"
+			}, {
+				"name": "value",
+				"value": "unitData.group"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "iifWmu01S8A9BzRDmhLP63yy4yNgXP8O",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "finalFormation"
+			}, {
+				"name": "value",
+				"value": "formation.StaticTransform(formation.Definition(\"wedge\").positions,0,nil, Vec3(15,15,15))"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "xx5hWm3aIoY84cQNRIYlKIjxWHogYLgy",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "groupDefintion",
+				"value": "groupFormation"
+			}, {
+				"name": "position",
+				"value": "Vec3(3000, 128, 100)"
+			}, {
+				"name": "formation",
+				"value": "finalFormation"
+			}, {
+				"name": "fight",
+				"value": "false"
+			}, {
+				"name": "scriptName",
+				"value": "nota_majdaT_ctp2.moveCustomGroupAllArrived"
+			} ],
+			"scriptName": "nota_majdaT_ctp2.moveCustomGroupAllArrived"
+		} ],
+		"id": "RoHNRTAcCffkWRji4W31ojASf1GgKphg",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

@@ -1,0 +1,149 @@
+{
+	"additionalNodes": [ {
+		"children": [],
+		"id": "sB2OyBRHdqF75bsIRMkhvyKnHUHKGdoK",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "groupDefintion",
+			"value": "groupFormation"
+		}, {
+			"name": "position",
+			"value": "Vec3(3420,128,130)"
+		}, {
+			"name": "formation",
+			"value": "finalFormation"
+		}, {
+			"name": "fight",
+			"value": "true"
+		}, {
+			"name": "scriptName",
+			"value": "nota_majdaT_ctp2.moveCustomGroupWithChangePivot"
+		} ],
+		"scriptName": "nota_majdaT_ctp2.moveCustomGroupWithChangePivot"
+	} ],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"2zhEtaZpuAB7PuPcczObMuophqI04bRx": {
+			"height": 94,
+			"title": "store",
+			"width": 360,
+			"x": 470,
+			"y": -168
+		},
+		"ClwuSG8knaRE4GTvscIRQJG8bmsM0eYQ": {
+			"height": 92,
+			"title": "store",
+			"width": 179,
+			"x": 464,
+			"y": -84
+		},
+		"HPLnzA0ay5TjEJl5WfM9PIPrKOP3j7dR": {
+			"height": 94,
+			"title": "store",
+			"width": 520,
+			"x": 463,
+			"y": 9
+		},
+		"OCQzNyiAhNQVp9UC8mIQDa15H1jBLei9": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 216,
+			"y": 22
+		},
+		"sB2OyBRHdqF75bsIRMkhvyKnHUHKGdoK": {
+			"height": 132,
+			"title": "nota_majdaT_ctp2.moveCustomGroupWithChangePivot",
+			"width": 437,
+			"x": 943,
+			"y": 113
+		},
+		"ycehRZm9ePib39htcr3BYU6wP7CnFtnn": {
+			"height": 112,
+			"title": "nota_majdaT_ctp2.fightUntilEnemyDead",
+			"width": 337,
+			"x": 493,
+			"y": 139
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "2zhEtaZpuAB7PuPcczObMuophqI04bRx",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "unitData"
+			}, {
+				"name": "value",
+				"value": "nota_majdaT_ctp2.Safety_Formation(units)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "ClwuSG8knaRE4GTvscIRQJG8bmsM0eYQ",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "groupFormation"
+			}, {
+				"name": "value",
+				"value": "unitData.group"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "HPLnzA0ay5TjEJl5WfM9PIPrKOP3j7dR",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "finalFormation"
+			}, {
+				"name": "value",
+				"value": "formation.StaticTransform(unitData.formation, 0, nil, Vec3(2,0,2))"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "ycehRZm9ePib39htcr3BYU6wP7CnFtnn",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "groupDefintion",
+				"value": "groupFormation"
+			}, {
+				"name": "position",
+				"value": "Vec3(3240,128,130)"
+			}, {
+				"name": "formation",
+				"value": "finalFormation"
+			}, {
+				"name": "scriptName",
+				"value": "nota_majdaT_ctp2.fightUntilEnemyDead"
+			} ],
+			"scriptName": "nota_majdaT_ctp2.fightUntilEnemyDead"
+		} ],
+		"id": "OCQzNyiAhNQVp9UC8mIQDa15H1jBLei9",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
